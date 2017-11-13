@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Application log</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Nov 03 12:17:04 IST 2017<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.java.test.Test_Login category">com.java.test.Test_Login</td>
+<td>Test_Login.java:16</td>
+<td title="Message">Successful Login TestCase</td>
+</tr>
+
+<tr>
+<td>137</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.java.pages.LoginPage category">com.java.pages.LoginPage</td>
+<td>LoginPage.java:29</td>
+<td title="Message">Cleared username</td>
+</tr>
+
+<tr>
+<td>275</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.java.pages.LoginPage category">com.java.pages.LoginPage</td>
+<td>LoginPage.java:31</td>
+<td title="Message">The entered email is=rakesh_QA.</td>
+</tr>
+
+<tr>
+<td>429</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.java.pages.LoginPage category">com.java.pages.LoginPage</td>
+<td>LoginPage.java:34</td>
+<td title="Message">Cleared password</td>
+</tr>
+
+<tr>
+<td>560</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.java.pages.LoginPage category">com.java.pages.LoginPage</td>
+<td>LoginPage.java:36</td>
+<td title="Message">Entered password</td>
+</tr>
+
+<tr>
+<td>4011</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.java.pages.LoginPage category">com.java.pages.LoginPage</td>
+<td>LoginPage.java:39</td>
+<td title="Message">login button clicked</td>
+</tr>
+
+<tr>
+<td>4093</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.java.pages.LoginPage category">com.java.pages.LoginPage</td>
+<td>LoginPage.java:41</td>
+<td title="Message">Page title isSite administration | Django site admin: </td>
+</tr>

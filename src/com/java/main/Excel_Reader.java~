@@ -1,0 +1,137 @@
+package main.excelreader_1;
+
+import org.apache.log4j.Logger;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+import java.io.FileInputStream;
+
+public class Excel_Reader {
+	public static Logger log = Logger.getLogger(Excel_Reader.class.getName());
+	public String path;
+	FileInputStream fis;
+	XSSFWorkbook Workbook;
+	XSSFSheet Sheet;
+	XSSFRow row;
+	XSSFCell cell;
+	public Excel_Reader(String path){
+		this.path=path;
+		
+		try{
+			
+			fis=new FileInputStream(path);
+			Workbook=new XSSFWorkbook(fis);
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+	 public String GetCellDAta(String sheetname, String colname, int rownum){
+		try{
+			int col_num = 0;
+			int index=Workbook.getSheetIndex(sheetname);
+			Sheet=Workbook.getSheetAt(index);
+			row=Sheet.getRow(0);
+			for(int i=0;i<row.getLastCellNum(); i++){
+				if(row.getCell(i).getStringCellValue().equalsIgnoreCase(colname)){
+					col_num=i;
+					
+				}
+			}
+			
+			row=Sheet.getRow(rownum-1);
+			cell=row.getCell(col_num);
+			if(cell.getCellType() == cell.CELL_TYPE_STRING){
+				return cell.getStringCellValue();
+			}
+			else if(cell.getCellType() == cell.CELL_TYPE_NUMERIC){
+				return String.valueOf(cell.getNumericCellValue());
+			}else if(cell.getCellType() == cell.CELL_TYPE_BOOLEAN){
+				return String.valueOf(cell.getBooleanCellValue());
+			}else if (cell.getCellType() == cell.CELL_TYPE_BLANK){
+				return "";
+			}
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		
+		 return null;
+		 
+	 }
+	 
+	 
+	 public String GetCellDAta(String sheetname, int colname, int rownum){
+			try{
+				int col_num;
+				int index=Workbook.getSheetIndex(sheetname);
+				Sheet=Workbook.getSheetAt(index);
+				row=Sheet.getRow(0);
+				//row=Sheet.getRow(rownum-1);
+				row=Sheet.getRow(rownum);
+				cell=row.getCell(colname);
+				if(cell.getCellType() == cell.CELL_TYPE_STRING){
+					return cell.getStringCellValue();
+				}
+				else if(cell.getCellType() == cell.CELL_TYPE_NUMERIC){
+
+					return String.valueOf((int)cell.getNumericCellValue());
+				}else if(cell.getCellType() == cell.CELL_TYPE_BOOLEAN){
+					return String.valueOf(cell.getBooleanCellValue());
+				}else if (cell.getCellType() == cell.CELL_TYPE_BLANK){
+					return "";
+				}
+			}
+			catch(Exception e){
+				e.printStackTrace();
+			}
+			
+			 return null;
+			 
+		 }
+	 
+	 public int getRowCount(String sheetname){
+		
+		 try{
+		 int index=Workbook.getSheetIndex(sheetname);
+		 if(index==-1){
+			 return 0;
+		 }else{
+			 Sheet= Workbook.getSheetAt(index);
+			 int number= Sheet.getLastRowNum()+1;
+			 return number;
+		 }
+			 
+	 }catch(Exception e){
+			e.printStackTrace();
+		}
+		return 0;
+		}
+	 
+	 
+	 public int getColCount(String sheetname){
+		 try{
+		 int index=Workbook.getSheetIndex(sheetname);
+		 if(index==-1){
+			 return 0;
+		 }else{
+			 Sheet= Workbook.getSheet(sheetname);
+			 row=Sheet.getRow(0);
+			 return row.getLastCellNum();
+		 }}
+		 catch(Exception e){
+				e.printStackTrace();
+			}
+		return 0; 
+	 }
+	 
+	 public static void main(String[]args){
+		 
+		 String path=System.getProperty("user.dir")+"/src/references/TestData1.xlsx";
+		 System.out.println(path);
+		 Excel_Reader obj= new Excel_Reader(path);
+		 System.out.println(obj.getRowCount("login"));
+	 }
+}

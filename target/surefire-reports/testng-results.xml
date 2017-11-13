@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[About to begin executing Suite ListenerRun]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Test Test2]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : BaseClass.Setup]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : BaseClass.Setup]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : BaseClass.beforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : BaseClass.beforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : Test_Login.Verify_Successful_Login]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : Test_Login.Verify_Successful_Login]]>
+    </line>
+    <line>
+      <![CDATA[Test Method resides in com.java.test.Test_Login]]>
+    </line>
+    <line>
+      <![CDATA[Test Status: Pass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : BaseClass.getResult]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : BaseClass.getResult]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : BaseClass.endTest]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : BaseClass.endTest]]>
+    </line>
+  </reporter-output>
+  <suite name="ListenerRun" duration-ms="6454" started-at="2017-10-31T05:06:47Z" finished-at="2017-10-31T05:06:53Z">
+    <groups>
+    </groups>
+    <test name="Test2" duration-ms="6454" started-at="2017-10-31T05:06:47Z" finished-at="2017-10-31T05:06:53Z">
+      <class name="com.java.test.Test_Login">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.java.test.Test_Login@5d20e46]" name="Setup" is-config="true" duration-ms="3005" started-at="2017-10-31T10:36:47Z" finished-at="2017-10-31T10:36:50Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : BaseClass.Setup]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.java.test.Test_Login@5d20e46]" name="beforeMethod" is-config="true" duration-ms="6" started-at="2017-10-31T10:36:50Z" finished-at="2017-10-31T10:36:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.java.test.Test_Login.Verify_Successful_Login() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : BaseClass.beforeMethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Verify_Successful_Login()[pri:0, instance:com.java.test.Test_Login@5d20e46]" name="Verify_Successful_Login" duration-ms="3391" started-at="2017-10-31T10:36:50Z" finished-at="2017-10-31T10:36:53Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : Test_Login.Verify_Successful_Login]]>
+            </line>
+            <line>
+              <![CDATA[Test Method resides in com.java.test.Test_Login]]>
+            </line>
+            <line>
+              <![CDATA[Test Status: Pass]]>
+            </line>
+            <line>
+              <![CDATA[About to begin executing following method : BaseClass.getResult]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Verify_Successful_Login -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.test.Test_Login@5d20e46]" name="getResult" is-config="true" duration-ms="3" started-at="2017-10-31T10:36:53Z" finished-at="2017-10-31T10:36:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Verify_Successful_Login status=SUCCESS method=Test_Login.Verify_Successful_Login()[pri:0, instance:com.java.test.Test_Login@5d20e46] output=Completed executing following method : Test_Login.Verify_Successful_Login]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : BaseClass.getResult]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="FAIL" signature="endTest()[pri:0, instance:com.java.test.Test_Login@5d20e46]" name="endTest" is-config="true" duration-ms="0" started-at="2017-10-31T10:36:53Z" finished-at="2017-10-31T10:36:53Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=59.0.3071.86)
+  (Driver info: chromedriver=2.29.461571 (8a88bbe0775e2a23afda0ceaf2ef7ee74e822cc5),platform=Linux 3.13.0-93-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'rakesh-Latitude-3540', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-93-generic', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461571 (8a88bbe0775e2a23afda0ceaf2ef7ee74e822cc5), userDataDir=/tmp/.org.chromium.Chromium.icOZX0}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.86, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 65a8f978f50e8586c7edd575b45392c9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=59.0.3071.86)
+  (Driver info: chromedriver=2.29.461571 (8a88bbe0775e2a23afda0ceaf2ef7ee74e822cc5),platform=Linux 3.13.0-93-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'rakesh-Latitude-3540', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-93-generic', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461571 (8a88bbe0775e2a23afda0ceaf2ef7ee74e822cc5), userDataDir=/tmp/.org.chromium.Chromium.icOZX0}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.86, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 65a8f978f50e8586c7edd575b45392c9
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:523)
+	at com.java.main.BaseClass.endTest(BaseClass.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:220)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : BaseClass.endTest]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.java.test.Test_Login -->
+    </test> <!-- Test2 -->
+  </suite> <!-- ListenerRun -->
+</testng-results>
