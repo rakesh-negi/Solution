@@ -1,0 +1,9 @@
+2017-11-24 11:20:41,472 - com.java.test.Test_Login -INFO - Successful Login TestCase
+2017-11-24 11:20:42,013 - com.java.pages.LoginPage -INFO - Cleared username
+2017-11-24 11:20:42,584 - com.java.pages.LoginPage -INFO - The entered email is=rakesh_qv.
+2017-11-24 11:20:42,698 - com.java.pages.LoginPage -INFO - Cleared password
+2017-11-24 11:20:42,801 - com.java.pages.LoginPage -INFO - Entered password
+2017-11-24 11:20:55,055 - com.java.pages.LoginPage -INFO - login button clicked
+2017-11-24 11:20:55,106 - com.java.pages.LoginPage -INFO - Page title isEngagement Console: 
+2017-11-24 11:20:55,119 - com.java.pages.LoginPage -INFO - Driver closed
+2017-11-24 11:20:55,122 - com.java.test.Test_Login -INFO - Logged Successfully

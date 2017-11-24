@@ -1,0 +1,7 @@
+2017-11-23 18:14:50,131 - com.java.test.Test_Login -INFO - Successful Login TestCase
+2017-11-23 18:14:50,629 - com.java.pages.LoginPage -INFO - Cleared username
+2017-11-23 18:14:50,959 - com.java.pages.LoginPage -INFO - The entered email is=rakesh_QA.
+2017-11-23 18:14:51,067 - com.java.pages.LoginPage -INFO - Cleared password
+2017-11-23 18:14:51,172 - com.java.pages.LoginPage -INFO - Entered password
+2017-11-23 18:14:54,898 - com.java.pages.LoginPage -INFO - login button clicked
+2017-11-23 18:14:55,029 - com.java.pages.LoginPage -INFO - Page title isSite administration | Django site admin: 
